@@ -10,7 +10,7 @@ git clone https://github.com/OsmanFarukO/agno-compose.git
 cd agno-compose
 git clone https://github.com/OsmanFarukO/agent-ui-dockerized.git
 
-docker compose build .
+docker compose build
 docker compose up -d
 ```
 Add your agents to `agent-playground/agents/ ` directory.
