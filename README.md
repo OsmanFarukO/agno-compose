@@ -8,7 +8,7 @@ This project created for orchestrate agent-ui with playground locally on docker-
 ```bash
 git clone https://github.com/OsmanFarukO/agno-compose.git
 cd agno-compose
-git clone https://github.com/OsmanFarukO/agent-ui-dockerized.git
+git submodule update --init --recursive
 
 docker compose build
 docker compose up -d
