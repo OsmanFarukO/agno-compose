@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  agent-ui:
+    build:
+      context: ./agent-ui-dockerized
+      dockerfile: Dockerfile
+    container_name: agent-ui
+    ports:
+      - '3000:3000'
+    networks:
+      - agent-net
+  agent-playground:
+    build:
+      context: ./agent-playground
+      dockerfile: Dockerfile
+    container_name: agent-playground
+    volumes:
+      - ./agent-playground:/app
+    ports:
+      - '7777:7777'
+    networks:
+      - agent-net
+
+networks:
+  agent-net:
+    driver: bridge

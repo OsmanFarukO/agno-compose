@@ -1,0 +1,3 @@
+[submodule "agent-ui-dockerized"]
+	path = agent-ui-dockerized
+	url = https://github.com/OsmanFarukO/agent-ui-dockerized
