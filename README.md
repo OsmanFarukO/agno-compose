@@ -24,3 +24,5 @@ Add your imported agents to app object
 app = Playground(agents=[my_perfect_agent]).get_app()
 ```
 Playground will reload itself. You can observe playground log with `docker compose logs -f agent-playground`
+
+You can visit and try your agent on `http://localhost:3000`
